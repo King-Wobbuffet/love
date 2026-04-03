@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>For My Love</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sky" aria-hidden="true">
+        <!-- generate hearts with CSS custom properties inline -->
+        <div class="heart" style="left:6%; --d:12s; --r:10deg"><svg viewBox="0 0 24 24" fill="#FF6B8A"><path d="M12 21s-7.2-4.6-9.2-7.2C1.1 11.3 2 7.5 5 5.8 7.3 4.6 9.9 5.6 11 7c1.1-1.4 3.7-2.4 6-1.2 3 1.7 3.9 5.5 2.2 8.1C19.2 16.4 12 21 12 21z"/></svg></div>
+        <div class="heart" style="left:26%; --d:14s; --r:-20deg"><svg viewBox="0 0 24 24" fill="#FF9BAA"><path d="M12 21s-7.2-4.6-9.2-7.2C1.1 11.3 2 7.5 5 5.8 7.3 4.6 9.9 5.6 11 7c1.1-1.4 3.7-2.4 6-1.2 3 1.7 3.9 5.5 2.2 8.1C19.2 16.4 12 21 12 21z"/></svg></div>
+        <div class="heart" style="left:48%; --d:10s; --r:5deg"><svg viewBox="0 0 24 24" fill="#FF6B8A"><path d="M12 21s-7.2-4.6-9.2-7.2C1.1 11.3 2 7.5 5 5.8 7.3 4.6 9.9 5.6 11 7c1.1-1.4 3.7-2.4 6-1.2 3 1.7 3.9 5.5 2.2 8.1C19.2 16.4 12 21 12 21z"/></svg></div>
+        <div class="heart" style="left:70%; --d:16s; --r:30deg"><svg viewBox="0 0 24 24" fill="#FFB3C1"><path d="M12 21s-7.2-4.6-9.2-7.2C1.1 11.3 2 7.5 5 5.8 7.3 4.6 9.9 5.6 11 7c1.1-1.4 3.7-2.4 6-1.2 3 1.7 3.9 5.5 2.2 8.1C19.2 16.4 12 21 12 21z"/></svg></div>
+        <div class="heart" style="left:88%; --d:13s; --r:-10deg"><svg viewBox="0 0 24 24" fill="#FF7C99"><path d="M12 21s-7.2-4.6-9.2-7.2C1.1 11.3 2 7.5 5 5.8 7.3 4.6 9.9 5.6 11 7c1.1-1.4 3.7-2.4 6-1.2 3 1.7 3.9 5.5 2.2 8.1C19.2 16.4 12 21 12 21z"/></svg></div>
+    </div>
+
+    <main class="card" role="main" aria-label="Romantic home page">
+        <section class="greeting">
+            <h1><span class="icon-heart" aria-hidden="true"><svg viewBox="0 0 24 24" fill="#FF6B8A"><path d="M12 21s-7.2-4.6-9.2-7.2C1.1 11.3 2 7.5 5 5.8 7.3 4.6 9.9 5.6 11 7c1.1-1.4 3.7-2.4 6-1.2 3 1.7 3.9 5.5 2.2 8.1C19.2 16.4 12 21 12 21z"/></svg></span>For My Love</h1>
+
+            <p class="subtitle">A small page made with all my heart — to remind you how dearly you are loved.</p>
+
+            <p class="poem">
+                When morning finds your sleeping smile,<br>
+                the world becomes a kinder place.<br>
+                In every quiet, simple while,<br>
+                I trace the light of your sweet face.
+            </p>
+
+            <div class="cta">
+                <button class="btn" id="openLetter">Read My Letter</button>
+                <button class="btn ghost" id="toggleSong">Play a Song</button>
+            </div>
+        </section>
+
+        <aside class="side" aria-label="side content">
+            <div class="photo" role="img" aria-label="A keepsake photo">
+                Your favorite moment
+            </div>
+            <div class="note">
+                Leave this page open when you sleep — a little warmth across the room, from me to you.
+            </div>
+        </aside>
+    </main>
+
+    <footer>Made with love ❤️</footer>
+
+    <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="letterTitle">
+        <div class="letter">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+                <strong id="letterTitle" style="font-size:18px;color:var(--accent)">A Letter to You</strong>
+                <button class="close" id="closeModal" aria-label="Close">Close ✕</button>
+            </div>
+            <div style="color:#6B3C44;line-height:1.7">
+                My dearest,<br><br>
+                You are the softest thought that greets my mornings and the quiet courage that carries me through the day. I am grateful for your laughter, for the way you hold my hand, and for every small miracle we share.<br><br>
+                Always yours,<br>
+                — with all my heart
+            </div>
+        </div>
+    </div>
+
+    <audio id="song" src="" preload="none"></audio>
+       <script src="script.js"></script>
+</body>
+</html>
